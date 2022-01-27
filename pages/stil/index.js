@@ -11,7 +11,6 @@ export const getStaticProps = async () => {
 }
 
 function Stil({ fremens }) {
-
     return (
         <>
             <Head>
@@ -23,8 +22,7 @@ function Stil({ fremens }) {
                 {fremens.map(fremen =>
                     <Link
                         key={fremen.id}
-                        href={`/stil/${fremen.id}`}
-                    >
+                        href={`/stil/${fremen.id}`}>
                         <a className={styles.single}>
                             <h3>{fremen.name}</h3>
                         </a>
@@ -34,5 +32,4 @@ function Stil({ fremens }) {
         </>
     )
 }
-
 export default Stil;
